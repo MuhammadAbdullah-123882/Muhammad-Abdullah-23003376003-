@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" type="image/png" href="logo.png">
+    <title>UMT - Sialkot | Learning Management System</title>
+    <style>
+        /* This sets the background image using the simplest method */
+        body {
+            background-image: url("umt.png");
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        /* The white box in the middle */
+        .login-container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 4px;
+            width: 350px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+        }
+
+        /* Styling for the input fields */
+        .input-field {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            background-color: #f1f5f9;
+            box-sizing: border-box; /* Keeps padding inside the width */
+        }
+
+        /* The blue login button */
+        .login-btn {
+            width: 100%;
+            padding: 12px;
+            background-color: #1a8fa8;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        /* The logo at the very top */
+        .top-logo {
+            width: 160px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <img src="logo.png" alt="UMT Logo" class="top-logo">
+
+    <div class="login-container">
+        <h2 style="font-weight: normal; font-size: 20px;">Already have an account?</h2>
+        
+        <form>
+            <input type="text" placeholder="Username" class="input-field">
+            <input type="password" placeholder="Password" class="input-field">
+            
+            <div style="margin: 10px 0; font-size: 14px;">
+                <input type="checkbox"> Remember username
+            </div>
+
+            <button type="button" class="login-btn">Log in</button>
+        </form>
+
+        <p style="font-size: 13px; margin-top: 15px;">
+            <a href="#" style="color: #1a8fa8; text-decoration: none;">Forgotten your username or password?</a>
+        </p>
+    </div>
+
+</body>
+</html>
